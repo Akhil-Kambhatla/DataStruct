@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+:root {
+    --primary-color: #2d2254;
+    --secondary-color: #f5c42f;
+    --text-color: #c5bbec;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--primary-color);
+    color: #fff;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    display: inline-block;
+    border: 0;
+    background: var(--secondary-color);
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+}
+
+.primary-text {
+    color: var(--primary-color);
+}
+
+.secondary-text {
+    color: var(--secondary-color);
+}
+
+.section {
+    position: relative;
+    padding: 0 20px;
+}
+
+/* Section Top */
+.section-top {
+    min-height: 500px;
+    background: url('https://i.ibb.co/PhVR2Vh/bg1.png') no-repeat center center/cover;
+}
+
+.section-top h1 {
+    font-size: 70px;
+    line-height: 1.3;
+}
+
+.section-top .content {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    width: 55%;
+}
+
+/* Sectionn Stream */
+.section-stream {
+    min-height: 700px;
+    background: url('https://i.ibb.co/bsX6RV0/bg2.png') no-repeat center center/cover;
+}
+
+.section-stream h2 {
+    font-size: 35px;
+}
+
+.section-stream .play {
+    width: 27%;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+.section-stream .content {
+    position: absolute;
+    width: 50%;
+    top: 130px;
+    right: 70px;
+}
+
+.section-stream .content>div,
+.section-grid>div {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Section  Grid */
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    text-align: center;
+}
+
+.section-grid p {
+    color: var(--text-color);
+}
+
+.section-grid .dot {
+    font-size: 40px;
+    padding-left: 2px;
+}
+
+/* Footer */
+.footer {
+    border-top: var(--text-color) 1px solid;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* Mobile */
+@media(max-width: 700px) {
+
+    .section-top .content,
+    .section-stream .play,
+    .section-stream .content {
+        position: static;
+        width: 100%;
+    }
+
+    .section-top {
+        min-height: 200px;
+        padding-top: 20px;
+    }
+
+    .section-top .content {
+        text-align: center;
+    }
+
+    .section-top .content h1 {
+        font-size: 45px;
+    }
+
+    .section-stream {
+        min-height: 400px;
+    }
+
+    .section-stream .play {
+        width: 50%;
+        display: block;
+        margin-top: 30px auto;
+    }
+
+    .section-grid {
+        display: block;
+        margin-top: 0;
+    }
+
+    .footer ul {
+        display: block;
+    }
+}
+
+.hover-effect {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hover-effect:hover {
+    background-color: #662cec;
+    color: #FFFFFF;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem, 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 100;
+    transition: 3s;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: burlywood;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: brown;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(2, 0, 0);
+}
+
+.secondsection {
+    max-width: 120vw;
+    margin: auto;
+    height: 20vh;
+}
+
+.secondsection h1 {
+    font-size: 2rem;
+}
+
+
+
+.vertical-title {
+    position: relative;
+    top: 2px;
+    width: 200px;
+    font-size: 20px;
+
+}
+
+.thirdsection {
+    max-width: 120vw;
+    margin: auto;
+    height: 20vh;
+}
+
+.thirdsection h1 {
+    font-size: 2rem;
+}
+
+
+
+.vertical-title {
+    position: relative;
+    top: 2px;
+    width: 200px;
+    font-size: 20px;
+
+}
+
+.show-btn{
+    background: black;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #3498db;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
+  .show-btn, .container{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  input[type="checkbox"]{
+    display: none;
+  }
+  .container{
+    display: none;
+    background: #fff;
+    width: 410px;
+    padding: 30px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  #show:checked ~ .container{
+    display: block;
+  }
+  .container .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .container .close-btn:hover{
+    color: #3498db;
+  }
+  .container .text{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+  }
+  .container form{
+    margin-top: -20px;
+  }
+  .container form .data{
+    height: 45px;
+    width: 100%;
+    margin: 40px 0;
+  }
+  form .data label{
+    font-size: 18px;
+    color: black;
+  }
+  form .data input{
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 1px solid silver;
+  }
+  form .data input:focus{
+    border-color: #3498db;
+    border-bottom-width: 2px;
+  }
+  form .forgot-pass{
+    margin-top: -8px;
+  }
+  form .forgot-pass a{
+    color: #3498db;
+    text-decoration: none;
+  }
+  form .forgot-pass a:hover{
+    text-decoration: underline;
+  }
+  form .btn{
+    margin: 30px 0;
+    height: 45px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  form .btn .inner{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    z-index: -1;
+    background: violet;
+    transition: all 0.4s;
+  }
+  form .btn:hover .inner{
+    left: 0;
+  }
+  form .btn button{
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  form .signup-link{
+    text-align: center;
+  }
+  form .signup-link a{
+    color: #3498db;
+    text-decoration: none;
+  }
+  form .signup-link a:hover{
+    text-decoration: underline;
+  }
